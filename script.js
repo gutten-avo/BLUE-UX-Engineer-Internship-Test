@@ -2,16 +2,69 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".product-container");
   const leftButton = document.querySelector(".left-button");
   const rightButton = document.querySelector(".right-button");
+  const tooltips = document.querySelectorAll(".scroll-button");
 
   let scrollPosition = 0;
 
-  // Mengaktifkan tombol scroll kanan dan kiri
+  // Show tooltip on hover
+  tooltips.forEach((button) => {
+    button.addEventListener("mouseenter", () => {
+      const tooltipText = button.getAttribute("data-tooltip");
+      const tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.textContent = tooltipText;
+      button.appendChild(tooltip);
+      tooltip.style.visibility = "visible";
+      tooltip.style.opacity = "1";
+    });
+
+    // Hide tooltip on mouse leave
+    button.addEventListener("mouseleave", () => {
+      const tooltip = button.querySelector(".tooltip");
+      tooltip.style.visibility = "hidden";
+      tooltip.style.opacity = "0";
+      button.removeChild(tooltip);
+    });
+  });
+
+  // Activate scroll buttons based on scroll position
   function enableScrollButtons() {
-    if (scrollPosition === 0) {
+    if (scrollPosition <= 0) {
+      leftButton.disabled = true;
+      rightButton.disabled = false;
+      hideTooltip(leftButton);
+    } else if (
+      scrollPosition >=
+      container.scrollWidth - container.clientWidth
+    ) {
+      leftButton.disabled = false;
+      rightButton.disabled = true;
+      hideTooltip(rightButton);
+    } else {
+      leftButton.disabled = false;
+      rightButton.disabled = false;
+      hideTooltip(leftButton);
+      hideTooltip(rightButton);
+    }
+  }
+
+  // Hide tooltip for a specific button
+  function hideTooltip(button) {
+    const tooltip = button.querySelector(".tooltip");
+    if (tooltip) {
+      tooltip.style.visibility = "hidden";
+      tooltip.style.opacity = "0";
+      button.removeChild(tooltip);
+    }
+  }
+
+  // Activate scroll buttons based on scroll position
+  function enableScrollButtons() {
+    if (scrollPosition <= 0) {
       leftButton.disabled = true;
       rightButton.disabled = false;
     } else if (
-      scrollPosition ===
+      scrollPosition >=
       container.scrollWidth - container.clientWidth
     ) {
       leftButton.disabled = false;
@@ -22,9 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Menggerakkan konten ke kanan
+  // Scroll container to the right
   function scrollRight() {
-    scrollPosition += 300; // Sesuaikan jumlah piksel yang ingin digerakkan
+    scrollPosition += 30;
     container.scrollTo({
       left: scrollPosition,
       behavior: "smooth",
@@ -32,9 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
     enableScrollButtons();
   }
 
-  // Menggerakkan konten ke kiri
+  // Scroll container to the left
   function scrollLeft() {
-    scrollPosition -= 300; // Sesuaikan jumlah piksel yang ingin digerakkan
+    scrollPosition -= 30;
     container.scrollTo({
       left: scrollPosition,
       behavior: "smooth",
@@ -42,11 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
     enableScrollButtons();
   }
 
-  // Menambahkan event listener untuk tombol scroll
+  // Add event listeners to scroll buttons
   leftButton.addEventListener("click", scrollLeft);
   rightButton.addEventListener("click", scrollRight);
 
-  // Memastikan tombol scroll aktif sesuai dengan posisi awal
+  // Enable/disable scroll buttons on page load
   enableScrollButtons();
 });
 
