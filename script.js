@@ -57,10 +57,10 @@ function toggleFooter() {
 
   if (footerContent.classList.contains("collapsed")) {
     footerContent.classList.remove("collapsed");
-    toggleButton.textContent = "Collapse All";
+    toggleButton.innerHTML = "Collapse All <span class='chevron'>▲</span>"; // Chevron atas (▲)
   } else {
     footerContent.classList.add("collapsed");
-    toggleButton.textContent = "Expand All";
+    toggleButton.innerHTML = "Expand All <span class='chevron'>▼</span>"; // Chevron bawah (▼)
   }
 }
 
