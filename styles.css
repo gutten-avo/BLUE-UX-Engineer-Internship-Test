@@ -36,6 +36,10 @@ button {
   font-family: "TT Commons Pro", Arial, sans-serif;
 }
 
+html: {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -44,6 +48,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 /* Navbar */
@@ -271,7 +278,7 @@ header {
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    margin-left: 0; 
+    margin-left: 0;
     width: 100vw;
   }
   .scroll-button {
