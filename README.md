@@ -8,7 +8,7 @@ You can access the written test by clicking the following link:
 
 or
 
-[Written Test (back up)] ( https://github.com/gutten-avo/BLUE-UX-Engineer-Internship-Test/blob/7b7f18c075c308a6c16b71055afd6f5e134b265c/BLUE%20UX%20Engineer%20Internship%20Written%20Test%20-%20Fauzan%20Mustofa.pdf)
+[Written Test (back up)] [BLUE UX Engineer Internship Written Test - Fauzan Mustofa.pdf](https://github.com/gutten-avo/BLUE-UX-Engineer-Internship-Test/blob/7b7f18c075c308a6c16b71055afd6f5e134b265c/BLUE%20UX%20Engineer%20Internship%20Written%20Test%20-%20Fauzan%20Mustofa.pdf)
 
 Please feel free to review and provide feedback on the written test.
 
