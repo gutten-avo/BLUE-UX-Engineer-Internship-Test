@@ -4,7 +4,7 @@ Welcome to the repository for my UX Engineer Internship test! Below, you'll find
 
 ## Written Test 📝
 You can access the written test by clicking the following link:
-[Written Test](https://docs.google.com/document/d/1Gz5EBBSVt9M0jEj1S13e13xeckoM2R9Feeefo14yft0/edit?usp=sharing) or [Written Test (back up)] (https://github.com/gutten-avo/BLUE-UX-Engineer-Internship-Test/blob/7b7f18c075c308a6c16b71055afd6f5e134b265c/BLUE%20UX%20Engineer%20Internship%20Written%20Test%20-%20Fauzan%20Mustofa.pdf)
+[Written Test](https://docs.google.com/document/d/1Gz5EBBSVt9M0jEj1S13e13xeckoM2R9Feeefo14yft0/edit?usp=sharing) or [Written Test - back up](https://github.com/gutten-avo/BLUE-UX-Engineer-Internship-Test/blob/7b7f18c075c308a6c16b71055afd6f5e134b265c/BLUE%20UX%20Engineer%20Internship%20Written%20Test%20-%20Fauzan%20Mustofa.pdf)
 
 Please feel free to review and provide feedback on the written test.
 
