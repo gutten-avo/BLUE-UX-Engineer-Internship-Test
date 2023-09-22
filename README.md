@@ -9,8 +9,7 @@ You can access the written test by clicking the following link:
 Please feel free to review and provide feedback on the written test.
 
 ## Technical Test 💻
-To explore the technical test, please click on the link below:
-
+To explore the technical test, please click on the link:
 [Technical Test](https://bb.fauzanmustofa.my.id/) or https://bb.fauzanmustofa.my.id and https://bb.fauzanmustofa.my.id/product-card
 
 The technical test is hosted on my personal website, and you can interact with it to assess my technical skills.
