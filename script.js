@@ -108,12 +108,12 @@ function toggleFooter() {
   const footerContent = document.getElementById("footer-content");
   const toggleButton = document.getElementById("toggle-footer-button");
 
-  if (footerContent.classList.contains("collapsed")) {
-    footerContent.classList.remove("collapsed");
-    toggleButton.innerHTML = "Collapse All <span class='chevron'>▲</span>"; // Chevron atas (▲)
+  if (footerContent.style.maxHeight === "0px") {
+    footerContent.style.maxHeight = "1000px";
+    toggleButton.innerHTML = "Collapse All <span class='chevron'>▲</span>"; // Set button text
   } else {
-    footerContent.classList.add("collapsed");
-    toggleButton.innerHTML = "Expand All <span class='chevron'>▼</span>"; // Chevron bawah (▼)
+    footerContent.style.maxHeight = "0px";
+    toggleButton.innerHTML = "Expand All <span class='chevron'>▼</span>"; // Set button text
   }
 }
 
@@ -121,9 +121,9 @@ function toggleFooter() {
 window.addEventListener("scroll", function () {
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
   if (window.pageYOffset > 200) {
-    scrollToTopBtn.style.display = "block";
+    scrollToTopBtn.style.display = "block"; // Show button
   } else {
-    scrollToTopBtn.style.display = "none";
+    scrollToTopBtn.style.display = "none"; // Hide button
   }
 });
 

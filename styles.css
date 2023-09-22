@@ -301,6 +301,9 @@ footer {
 #footer-content {
   padding: 20px;
   text-align: justify;
+  max-height: 0; /* Add max-height property for the transition */
+  overflow: hidden; /* Hide content that exceeds the max-height */
+  transition: max-height 0.3s ease-in-out; /* Add the transition */
 }
 
 .footer-bottom {
@@ -315,10 +318,6 @@ footer {
   background-color: transparent;
   border: none;
   text-align: justify;
-}
-
-#footer-content.collapsed {
-  display: none;
 }
 
 /* Scroll to top button */
