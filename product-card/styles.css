@@ -155,12 +155,19 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .product-card {
+    width: 132px;
+  }
+}
+
 /*  Floating Text */
 
 .floating-text {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  margin-left: 10px;
   background-color: var(--biru); /* Background color of the text */
   color: white; /* Text color */
   padding: 5px 10px;
