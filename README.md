@@ -1,3 +1,5 @@
+# Yeayy, I'm officially a Blibli intern.
+
 # BLUE UX Engineer Internship Test - Fauzan Mustofa
 
 Welcome to the repository for my UX Engineer Internship test! Below, you'll find links to the written and technical tests for your review. 🚀
