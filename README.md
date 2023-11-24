@@ -12,7 +12,7 @@ Please feel free to review and provide feedback on the written test.
 
 ## Technical Test 💻
 To explore the technical test, please click on the link:
-[Technical Test](https://bb.fauzanmustofa.my.id/) or https://bb.fauzanmustofa.my.id and https://bb.fauzanmustofa.my.id/product-card
+[Technical Test](https://bliblitest.fauzanmustofa.my.id/) or https://bliblitest.fauzanmustofa.my.id and https://bliblitest.fauzanmustofa.my.id/product-card
 
 The technical test is hosted on my personal website, and you can interact with it to assess my technical skills.
 
